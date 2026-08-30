@@ -1,6 +1,6 @@
 export const appParams = {
-  appId: '',
-  token: '',
-  functionsVersion: 'v1',
-  appBaseUrl: ''
+  appId: import.meta.env.VITE_BASE44_APP_ID || '',
+  token: import.meta.env.VITE_BASE44_TOKEN || '',
+  functionsVersion: import.meta.env.VITE_BASE44_FUNCTIONS_VERSION || 'v1',
+  appBaseUrl: import.meta.env.VITE_BASE44_APP_BASE_URL || ''
 };
