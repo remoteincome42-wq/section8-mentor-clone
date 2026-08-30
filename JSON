@@ -1,0 +1,27 @@
+{
+  "name": "section8-mentor-clone",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6",
+    "@tanstack/react-query": "^4",
+    "react-markdown": "^8",
+    "lucide-react": "^0.280.0",
+    "@base44/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "vite": "^5",
+    "@vitejs/plugin-react": "^4",
+    "tailwindcss": "^3",
+    "postcss": "^8",
+    "autoprefixer": "^10",
+    "tailwindcss-animate": "^1"
+  }
+}
