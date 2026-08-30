@@ -1,0 +1,15 @@
+{
+  "name": "Lesson",
+  "type": "object",
+  "properties": {
+    "title": { "type": "string" },
+    "module": { "type": "string" },
+    "order": { "type": "number", "default": 0 },
+    "level": { "type": "string", "enum": ["beginner", "intermediate", "advanced"], "default": "beginner" },
+    "summary": { "type": "string" },
+    "content": { "type": "string" },
+    "duration_minutes": { "type": "number", "default": 10 },
+    "key_takeaways": { "type": "array", "items": { "type": "string" } }
+  },
+  "required": ["title", "module", "summary", "content"]
+}

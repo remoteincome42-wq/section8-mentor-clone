@@ -1,0 +1,23 @@
+{
+  "name": "Opportunity",
+  "type": "object",
+  "properties": {
+    "title": { "type": "string" },
+    "location": { "type": "string" },
+    "property_type": { "type": "string" },
+    "asking_price": { "type": "number" },
+    "current_rent": { "type": "number" },
+    "section8_status": { "type": "string", "enum": ["active", "lapsed", "pending"], "default": "active" },
+    "problem_type": {
+      "type": "string",
+      "enum": ["toxic_title", "code_violations", "distressed_financials", "problem_tenants", "deferred_maintenance", "tax_lien", "other"],
+      "default": "other"
+    },
+    "problem_description": { "type": "string" },
+    "cap_rate": { "type": "number" },
+    "units": { "type": "number", "default": 1 },
+    "status": { "type": "string", "enum": ["open", "in_progress", "resolved"], "default": "open" },
+    "contact_info": { "type": "string" }
+  },
+  "required": ["title", "location", "problem_type", "problem_description", "status"]
+}

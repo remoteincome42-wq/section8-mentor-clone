@@ -1,0 +1,20 @@
+{
+  "name": "FinancingOption",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string" },
+    "category": {
+      "type": "string",
+      "enum": ["dscr_loan", "sba", "hard_money", "fha", "partnership", "grant", "seller_financing", "conventional", "other"],
+      "default": "other"
+    },
+    "description": { "type": "string" },
+    "best_for": { "type": "string" },
+    "requirements": { "type": "array", "items": { "type": "string" } },
+    "pros": { "type": "array", "items": { "type": "string" } },
+    "cons": { "type": "array", "items": { "type": "string" } },
+    "typical_rates": { "type": "string" },
+    "min_credit_score": { "type": "number" }
+  },
+  "required": ["name", "category", "description", "best_for"]
+}
